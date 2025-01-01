@@ -33,24 +33,23 @@ console.log(fileName);
 // Add event listener for home button (fade out)
 homebtn.addEventListener("click", () => {
   window.location.href = "/home";
-  homePage.style.display = "flex"; // Show the page before animating
-  homePage.classList.remove("fade-out"); // Ensure any previous fade-out is removed
+  // homePage.style.display = "flex"; // Show the page before animating
+  // homePage.classList.remove("fade-out"); // Ensure any previous fade-out is removed
 
   // Listen for the end of the fade-in animation
-  homePage.addEventListener(
-    "animationend",
-    () => {
-      homePage.classList.remove("fade-in"); // Clean up the fade-in class after the animation
-    },
-    { once: true }
-  ); // Remove the event listener after it runs
+  // homePage.addEventListener(
+  //   "animationend",
+  //   () => {
+  //     homePage.classList.remove("fade-in"); // Clean up the fade-in class after the animation
+  //   },
+  //   { once: true }
+  // ); // Remove the event listener after it runs
   projects.style.display = "none";
   skills.style.display = "none";
   education.style.display = "none";
   certifications.style.display = "none";
   resume.style.display = "none";
   hobbies.style.display = "none";
-
 });
 
 proBtn.addEventListener("click", async () => {
