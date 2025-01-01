@@ -4,7 +4,9 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Use environment variable or default to 3000
+
+
 
 // Middleware to serve static files and parse body of POST requests
 app.use(express.static(path.join(__dirname, "public")));
@@ -61,7 +63,7 @@ app.post("/submit-form", (req, res) => {
   });
 });
 
-// Start the server
-app.listen(port, () => {
+// Start the server and listen on all available network interfaces
+app.listen(port, '0.0.0.0', () => {
   console.log(`App listening on http://localhost:${port}/`);
 });
