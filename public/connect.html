@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            padding: 20px;
+        }
+
+        .social-container h5 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .social-links a {
+            color: #2c3e50;
+            font-size: 50px;
+            margin: 30px 0;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+            transform: scale(1.3);
+        }
+
+        .contact-container {
+            flex: 1;
+            max-width: 700px;
+            margin: 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .contact-header p {
+            color: #7f8c8d;
+        }
+
+        .form-control {
+            border-radius: 10px;
+        }
+
+        textarea.form-control {
+            resize: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #74ebd5, #acb6e5);
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #acb6e5, #74ebd5);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navBar center spacebtwn fade-in">
+        <h1 style="cursor: pointer;" class="navLeft">PEARL</h1>
+        <div class="navRight"><svg class="navSvg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274"
+                    stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M15 18H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+            </svg></div>
+    </nav>
+
+    <div class="container main-container">
+        <div class="social-container">
+            <h5>Connect with Me</h5>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pearl-991035328/" target="_blank" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/PEARL-XD?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank"
+                    title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="mailto:pearlsingh890@gmail.com" title="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>SaY HeLlO</h1>
+                <p>I'd love to hear from you! Please fill out the form below or connect with me on social media.</p>
+            </div>
+            <form method="POST" action="/submit-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">What should we call you?</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                        placeholder="Let’s start with your name." required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Where can we reach you?</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                        placeholder="Drop your email here so we can get in touch." required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">What’s on your mind?</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"
+                        placeholder="Tell us your thoughts." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Pearl's Portfolio. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="src/script.js"></script>
+</body>
+
+</html>

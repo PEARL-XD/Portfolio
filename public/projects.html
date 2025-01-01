@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f3f3;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+
+        .justcol {
+            display: flex;
+            flex-direction: column; 
+            margin: auto;
+            width: 90vw;
+            gap: 10vh;
+        }
+
+        main {
+            padding: 50px 15px;
+        }
+
+        #proj {
+            text-align: center;
+            font-size: 3rem;
+            color: #34495e;
+            font-weight: 800;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .center.proMain {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+            padding: 25px;
+            background: linear-gradient(to right, #ffffff, #f8f9fa);
+            border-radius: 20px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .center.proMain:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .left.carousels,
+        .right.text {
+            flex: 1 1 calc(50% - 20px);
+            max-width: 48%;
+        }
+
+        .carousel img {
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .right.text h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e272e;
+        }
+
+        .right.text h5 {
+            font-size: 1.1rem;
+            color: #57606f;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        .right.text ul {
+            margin-top: 15px;
+            padding-left: 25px;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .btnp {
+            border: 2px solid #2c3e50;
+            color: #2c3e50;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 10px 25px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #2c3e50;
+            color: #fff;
+            box-shadow: 0px 6px 20px rgba(44, 62, 80, 0.3);
+        }
+
+        .card.card-body {
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to bottom right, #ffffff, #f1f2f6);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card.card-body:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+
+            .left.carousels,
+            .right.text {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .center.proMain {
+                padding: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="justcol">
+        <h1 id="proj">Projects</h1>
+        <!-- first img/text -->
+        <div id="first" class="center proMain">
+            <div class="left carousels">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Projects/Spotofy Clone/spot.gif" class=" rounded w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/Spotofy Clone/Screenshot 2024-12-28 210409.png" class=" rounded w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/Spotofy Clone/Screenshot 2024-12-28 210443.png" class="  rounded w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="right text">
+                <h2>Spotify Clone: A Music Streaming Web Application</h2><br>
+                <h5>This project is a Spotify Clone, built using HTML, CSS, JavaScript, Node.js, and Express.js. The app
+                    replicates the core features of a music streaming service, allowing users to browse songs, play
+                    tracks,
+                    and enjoy an immersive music experience. I implemented dynamic song loading through Node.js, which
+                    enables a smooth user interface with minimal delay.</h5>
+                <br>
+                <p>
+                    <button class="btnp btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Key features include:
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="card card-body" style="width: 700px;">
+                            <ul>
+                                <li>User Authentication: Built a login/logout system using local storage to store and
+                                    verify
+                                    user credentials, ensuring that only authenticated users can access the songs.</li>
+                                <li>Dynamic Song List: The song list is dynamically rendered on the browser through
+                                    Node.js
+                                    to ensure scalability and efficiency, especially for a limited set of songs.</li>
+                                <li>Frontend: Designed a clean and responsive user interface using HTML and CSS,
+                                    ensuring an
+                                    optimal experience across devices.</li>
+                                <li>Backend: Utilized Express.js to set up routes and manage server-side logic, creating
+                                    a
+                                    seamless integration between the frontend and the backend.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second text/img -->
+        <div id="second" class="center proMain">
+            <div class="right text">
+                <h2>X (Twitter) UI Clone: Social Media Web Application UI</h2><br>
+                <h5>This project is an X (Twitter) UI Clone, built using HTML and Tailwind CSS, demonstrating
+                    proficiency in creating modern, responsive web interfaces. The application mimics the core user
+                    interface of X (formerly Twitter) with a focus on layout, responsiveness, and clean design.</h5>
+                <br>
+                <p>
+                    <button class="btn btnp btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample2" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Key features include:
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                        <div class="card card-body" style="width: 700px;">
+                            <ul>
+                                <li>Responsive Design: Designed with Tailwind CSS to ensure full responsiveness across
+                                    various screen sizes, from mobile (320px) to desktop (4K displays). The layout
+                                    dynamically adjusts for an optimal user experience on any device.</li>
+                                <li>UI Components: The project replicates key elements of X's interface, including the
+                                    navigation bar, tweet feed, profile layout, and interactive buttons, all designed
+                                    with Tailwind CSS for a fast, utility-first approach.</li>
+                                <li>Performance Optimized: The use of Tailwind CSS ensures lightweight, optimized
+                                    styling, reducing page load times and ensuring a smooth experience across devices.
+                                </li>
+                                <li>Modern Design: Focused on implementing a sleek and modern UI with a clear, organized
+                                    structure and visual appeal.</li>
+                            </ul>
+                            <p>This project highlights my ability to build responsive, clean, and well-structured user
+                                interfaces with Tailwind CSS, showcasing my skills in modern front-end web design and
+                                development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left carousels">
+                <div id="carouselExampleIndicators2" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Projects/X UI/Recording 2024-12-28 232818.gif" class=" rounded w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/X UI/Giff.gif" alt="" class=" rounded w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/X UI/Screenshot 2024-12-28 225143.png" class="  rounded w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- third img/text -->
+        <div id="third" class="center proMain">
+            <div class="left carousels">
+                <div id="carouselExampleIndicators3" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Projects/Currency/Recording 2024-12-28 230726.gif" class=" rounded w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/Currency/Screenshot 2024-12-28 210311.png" class=" rounded w-100"
+                                alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="right text">
+                <h2>Currency Converter: A Real-Time Currency Conversion Web Application</h2><br>
+                <h5>This project is a Currency Converter, built using HTML, CSS, and JavaScript. The app allows users to
+                    convert currencies in real-time and view exchange rates for all countries. The data is fetched
+                    dynamically from an external Exchange Rate API, ensuring accurate and up-to-date conversion rates.
+                </h5>
+                <br>
+                <p>
+                    <button class="btn btnp btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample3" aria-expanded="false"
+                        aria-controls="collapseWidthExample3">
+                        Key features include:
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                        <div class="card card-body" style="width: 700px;">
+                            <ul>
+                                <li>Currency Conversion: The app allows users to select from a list of currencies and
+                                    input an amount to convert it to another currency, displaying the converted value
+                                    instantly.</li>
+                                <li>Real-Time Exchange Rates: Integrated the Exchange Rate API to fetch the latest
+                                    exchange rates, ensuring the app displays up-to-date values for all supported
+                                    currencies.</li>
+                                <li>Country Flags Integration: Flags of countries are displayed next to the currency
+                                    names, making the app visually intuitive for users and enhancing the user
+                                    experience.</li>
+                                <li>JavaScript Integration: Utilized JavaScript to dynamically update the displayed
+                                    exchange rates and handle currency conversion logic, allowing for a smooth and
+                                    interactive user experience.</li><br>
+                                <p>This project showcases my ability to work with external APIs to retrieve and display
+                                    real-time data, while creating a clean and responsive front-end user experience.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fourth text/img -->
+        <div id="fourth" class="center proMain">
+            <div class="right text">
+                <h2>Typing Master Game: A Typing Speed and Accuracy Web Application</h2><br>
+                <h5>This project is a Typing Master Game, built using HTML, CSS, and JavaScript. The game challenges
+                    users to improve their typing speed and accuracy by typing random paragraphs within a set time.
+                    Real-time performance metrics, such as words per minute (WPM), characters per minute (CPM), and
+                    mistakes, are dynamically displayed to enhance the learning experience. </h5>
+                <br>
+                <p>
+                    <button class="btn btnp btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample4" aria-expanded="false"
+                        aria-controls="collapseWidthExample4">
+                        Key features include:
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+                        <div class="card card-body" style="width: 700px;">
+                            <ul>
+                                <li>Dynamic Text Selection: The game randomly selects a paragraph from a predefined set,
+                                    ensuring a varied typing experience for each session.</li>
+                                <li>Real-Time Typing Metrics: The game tracks and updates WPM, CPM, and mistakes as
+                                    users type, providing immediate feedback on their performance.</li>
+                                <li>Timer Integration: A countdown timer runs from 60 seconds, challenging users to
+                                    complete typing the text within the allocated time.</li>
+                                <li>Error Tracking and Feedback: Mistyped characters are highlighted in red, and correct
+                                    characters are marked in green, helping users quickly identify and learn from their
+                                    mistakes.
+                                </li>
+                                <li>Responsive Design: Designed a mobile-friendly and responsive interface using HTML
+                                    and CSS, ensuring users have a smooth and engaging experience across all devices.
+                                </li>
+                                <li>JavaScript Logic: Utilized JavaScript to handle the dynamic interaction between the
+                                    timer, input field, and typing feedback, ensuring smooth and real-time updates.</li>
+                            </ul>
+                            <p>This project highlights my ability to create interactive web applications with real-time
+                                data updates and user feedback, showcasing my skills in JavaScript for interactive
+                                functionalities and front-end development for building responsive, user-friendly
+                                interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left carousels">
+                <div id="carouselExampleIndicators4" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Projects/Typing/Recording 2024-12-28 231817.gif" class=" rounded w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/Typing/Screenshot 2024-12-28 212823.png" alt="" class=" rounded w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- fift img/text -->
+        <div id="fifth" class="center proMain">
+            <div class="left carousels">
+                <div id="carouselExampleIndicators5" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Projects/Task manager/task.gif" class=" rounded w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/Task manager/Screenshot 2024-12-28 210704.png" class=" rounded w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Projects/Task manager/Screenshot 2024-12-28 210715.png" class=" rounded w-100"
+                                alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="right text">
+                <h2>Task Manager: A Simple Task Management Web Application</h2><br>
+                <h5>This project is a Task Manager web application, developed using HTML, CSS, and JavaScript, which
+                    allows users to add, delete, and edit tasks. The app also includes a simple login/logout system,
+                    ensuring that only authenticated users can manage their tasks. The user credentials are stored
+                    locally with a constant password for simplicity.</h5>
+                <br>
+                <p>
+                    <button class="btn btnp btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample5" aria-expanded="false"
+                        aria-controls="collapseWidthExample5">
+                        Key features include:
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample5">
+                        <div class="card card-body" style="width: 700px;">
+                            <ul>
+                                <li>Task Management: Users can add new tasks, delete completed tasks, and edit existing
+                                    tasks to keep track of their to-do list efficiently.</li>
+                                <li>Login/Logout System: Implemented a basic login page where users must enter a
+                                    constant password to gain access to the task manager, with a logout feature to
+                                    secure the app.</li>
+                                <li>Dynamic Task List: The task list is dynamically updated as users add, edit, or
+                                    delete tasks. This provides a smooth and interactive experience.</li>
+                                <li>Responsive Design: Designed the interface using HTML and CSS, ensuring a simple,
+                                    clean, and mobile-friendly layout for a smooth user experience across devices.</li>
+                                <li>JavaScript Logic: Utilized JavaScript to handle the addition, deletion, and editing
+                                    of tasks. The login/logout functionality is also controlled via JavaScript to ensure
+                                    proper session management.</li>
+                            </ul>
+                            <p>This project highlights my ability to build a functional web application with user
+                                authentication and dynamic content management. It demonstrates my skills in front-end
+                                development with HTML, CSS, and JavaScript, as well as my understanding of building
+                                interactive and user-oriented web apps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>
