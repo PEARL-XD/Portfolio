@@ -62,6 +62,10 @@ proBtn.addEventListener("click", async () => {
     },
     { once: true }
   ); // Remove the event listener after it runs
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   projects.style.display = "block";
   await loadProjectsContent(projects, "projects"); // Pass the container and file name
 });
@@ -76,6 +80,10 @@ skillbtn.addEventListener("click", async () => {
     },
     { once: true }
   ); // Remove the event listener after it runs
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   skills.style.display = "block";
   await loadProjectsContent(skills, "skills"); // Pass the container and file name
 });
@@ -90,6 +98,10 @@ eduBtn.addEventListener("click", async () => {
     },
     { once: true }
   ); // Remove the event listener after it runs
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   education.style.display = "block";
   await loadProjectsContent(education, "education"); // Pass the container and file name
 });
@@ -103,6 +115,10 @@ resumeBtn.addEventListener("click", async () => {
     },
     { once: true }
   ); // Remove the event listener after it runs
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   resume.style.display = "block";
   await loadProjectsContent(resume, "resume"); // Pass the container and file name
 });
@@ -116,6 +132,10 @@ certificationsBtn.addEventListener("click", async () => {
     },
     { once: true }
   ); // Remove the event listener after it runs
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   certifications.style.display = "block";
   await loadProjectsContent(certifications, "certifications"); // Pass the container and file name
 });
@@ -129,6 +149,10 @@ hobbiesBtn.addEventListener("click", async () => {
     },
     { once: true }
   ); // Remove the event listener after it runs
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   hobbies.style.display = "block";
   await loadProjectsContent(hobbies, "hobbies"); // Pass the container and file name
 });
