@@ -19,7 +19,7 @@
 
         .justcol {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             margin: auto;
             width: 90vw;
             gap: 10vh;
@@ -127,6 +127,10 @@
             filter: invert(100%);
         }
 
+        .bheight {
+            height: 100px;
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 768px) {
 
@@ -137,9 +141,53 @@
             }
 
             .center.proMain {
-                padding: 20px;
+                padding: 15px;
+                gap: 20px;
             }
 
+            .right.text h2 {
+                font-size: clamp(1.5rem, 4vw, 2rem);
+            }
+
+            .right.text h5 {
+                font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+                line-height: 1.6;
+            }
+
+            .btnp {
+                font-size: 0.9rem;
+                padding: 8px 20px;
+            }
+
+            .card.card-body {
+                width: auto;
+                /* Adjusts to the container */
+                max-width: 100%;
+                /* Prevents overflow */
+                box-shadow: none;
+            }
+        }
+
+        /* Extra Small Screens (Mobile Devices) */
+        @media (max-width: 480px) {
+            .btnp {
+                font-size: 0.8rem;
+                padding: 6px 15px;
+            }
+
+            .card.card-body ul {
+                font-size: 0.85rem;
+                line-height: 1.4;
+
+            }
+
+            .right.text h5 {
+                font-size: 0.9rem;
+            }
+
+            .bheight {
+                height: 10px !important;
+            }
         }
     </style>
 </head>
@@ -199,30 +247,30 @@
                         Key features include:
                     </button>
                 </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 700px;">
-                            <ul>
-                                <li>User Authentication: Built a login/logout system using local storage to store and
-                                    verify
-                                    user credentials, ensuring that only authenticated users can access the songs.</li>
-                                <li>Dynamic Song List: The song list is dynamically rendered on the browser through
-                                    Node.js
-                                    to ensure scalability and efficiency, especially for a limited set of songs.</li>
-                                <li>Frontend: Designed a clean and responsive user interface using HTML and CSS,
-                                    ensuring an
-                                    optimal experience across devices.</li>
-                                <li>Backend: Utilized Express.js to set up routes and manage server-side logic, creating
-                                    a
-                                    seamless integration between the frontend and the backend.</li>
-                            </ul>
-                        </div>
+                <div class="bheight"></div>
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 700px;">
+                        <ul>
+                            <li>User Authentication: Built a login/logout system using local storage to store and
+                                verify
+                                user credentials, ensuring that only authenticated users can access the songs.</li>
+                            <li>Dynamic Song List: The song list is dynamically rendered on the browser through
+                                Node.js
+                                to ensure scalability and efficiency, especially for a limited set of songs.</li>
+                            <li>Frontend: Designed a clean and responsive user interface using HTML and CSS,
+                                ensuring an
+                                optimal experience across devices.</li>
+                            <li>Backend: Utilized Express.js to set up routes and manage server-side logic, creating
+                                a
+                                seamless integration between the frontend and the backend.</li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- second text/img -->
-        <div id="second" class="center proMain">
+        <div id="second" class="center proMain rev">
             <div class="right text">
                 <h2>X (Twitter) UI Clone: Social Media Web Application UI</h2><br>
                 <h5>This project is an X (Twitter) UI Clone, built using HTML and Tailwind CSS, demonstrating
@@ -236,28 +284,28 @@
                         Key features include:
                     </button>
                 </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample2">
-                        <div class="card card-body" style="width: 700px;">
-                            <ul>
-                                <li>Responsive Design: Designed with Tailwind CSS to ensure full responsiveness across
-                                    various screen sizes, from mobile (320px) to desktop (4K displays). The layout
-                                    dynamically adjusts for an optimal user experience on any device.</li>
-                                <li>UI Components: The project replicates key elements of X's interface, including the
-                                    navigation bar, tweet feed, profile layout, and interactive buttons, all designed
-                                    with Tailwind CSS for a fast, utility-first approach.</li>
-                                <li>Performance Optimized: The use of Tailwind CSS ensures lightweight, optimized
-                                    styling, reducing page load times and ensuring a smooth experience across devices.
-                                </li>
-                                <li>Modern Design: Focused on implementing a sleek and modern UI with a clear, organized
-                                    structure and visual appeal.</li>
-                            </ul>
-                            <p>This project highlights my ability to build responsive, clean, and well-structured user
-                                interfaces with Tailwind CSS, showcasing my skills in modern front-end web design and
-                                development.</p>
-                        </div>
+                <div class="bheight"></div>
+                <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                    <div class="card card-body" style="width: 700px;">
+                        <ul>
+                            <li>Responsive Design: Designed with Tailwind CSS to ensure full responsiveness across
+                                various screen sizes, from mobile (320px) to desktop (4K displays). The layout
+                                dynamically adjusts for an optimal user experience on any device.</li>
+                            <li>UI Components: The project replicates key elements of X's interface, including the
+                                navigation bar, tweet feed, profile layout, and interactive buttons, all designed
+                                with Tailwind CSS for a fast, utility-first approach.</li>
+                            <li>Performance Optimized: The use of Tailwind CSS ensures lightweight, optimized
+                                styling, reducing page load times and ensuring a smooth experience across devices.
+                            </li>
+                            <li>Modern Design: Focused on implementing a sleek and modern UI with a clear, organized
+                                structure and visual appeal.</li>
+                        </ul>
+                        <p>This project highlights my ability to build responsive, clean, and well-structured user
+                            interfaces with Tailwind CSS, showcasing my skills in modern front-end web design and
+                            development.</p>
                     </div>
                 </div>
+
             </div>
 
             <div class="left carousels">
@@ -295,7 +343,7 @@
             </div>
         </div>
         <!-- third img/text -->
-        <div id="third" class="center proMain">
+        <div id="third" class="center proMain ">
             <div class="left carousels">
                 <div id="carouselExampleIndicators3" class="carousel slide">
                     <div class="carousel-indicators">
@@ -343,32 +391,32 @@
                         Key features include:
                     </button>
                 </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample3">
-                        <div class="card card-body" style="width: 700px;">
-                            <ul>
-                                <li>Currency Conversion: The app allows users to select from a list of currencies and
-                                    input an amount to convert it to another currency, displaying the converted value
-                                    instantly.</li>
-                                <li>Real-Time Exchange Rates: Integrated the Exchange Rate API to fetch the latest
-                                    exchange rates, ensuring the app displays up-to-date values for all supported
-                                    currencies.</li>
-                                <li>Country Flags Integration: Flags of countries are displayed next to the currency
-                                    names, making the app visually intuitive for users and enhancing the user
-                                    experience.</li>
-                                <li>JavaScript Integration: Utilized JavaScript to dynamically update the displayed
-                                    exchange rates and handle currency conversion logic, allowing for a smooth and
-                                    interactive user experience.</li><br>
-                                <p>This project showcases my ability to work with external APIs to retrieve and display
-                                    real-time data, while creating a clean and responsive front-end user experience.</p>
-                            </ul>
-                        </div>
+                <div class="bheight"></div>
+                <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                    <div class="card card-body" style="width: 700px;">
+                        <ul>
+                            <li>Currency Conversion: The app allows users to select from a list of currencies and
+                                input an amount to convert it to another currency, displaying the converted value
+                                instantly.</li>
+                            <li>Real-Time Exchange Rates: Integrated the Exchange Rate API to fetch the latest
+                                exchange rates, ensuring the app displays up-to-date values for all supported
+                                currencies.</li>
+                            <li>Country Flags Integration: Flags of countries are displayed next to the currency
+                                names, making the app visually intuitive for users and enhancing the user
+                                experience.</li>
+                            <li>JavaScript Integration: Utilized JavaScript to dynamically update the displayed
+                                exchange rates and handle currency conversion logic, allowing for a smooth and
+                                interactive user experience.</li><br>
+                            <p>This project showcases my ability to work with external APIs to retrieve and display
+                                real-time data, while creating a clean and responsive front-end user experience.</p>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- fourth text/img -->
-        <div id="fourth" class="center proMain">
+        <div id="fourth" class="center proMain rev">
             <div class="right text">
                 <h2>Typing Master Game: A Typing Speed and Accuracy Web Application</h2><br>
                 <h5>This project is a Typing Master Game, built using HTML, CSS, and JavaScript. The game challenges
@@ -383,33 +431,33 @@
                         Key features include:
                     </button>
                 </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample4">
-                        <div class="card card-body" style="width: 700px;">
-                            <ul>
-                                <li>Dynamic Text Selection: The game randomly selects a paragraph from a predefined set,
-                                    ensuring a varied typing experience for each session.</li>
-                                <li>Real-Time Typing Metrics: The game tracks and updates WPM, CPM, and mistakes as
-                                    users type, providing immediate feedback on their performance.</li>
-                                <li>Timer Integration: A countdown timer runs from 60 seconds, challenging users to
-                                    complete typing the text within the allocated time.</li>
-                                <li>Error Tracking and Feedback: Mistyped characters are highlighted in red, and correct
-                                    characters are marked in green, helping users quickly identify and learn from their
-                                    mistakes.
-                                </li>
-                                <li>Responsive Design: Designed a mobile-friendly and responsive interface using HTML
-                                    and CSS, ensuring users have a smooth and engaging experience across all devices.
-                                </li>
-                                <li>JavaScript Logic: Utilized JavaScript to handle the dynamic interaction between the
-                                    timer, input field, and typing feedback, ensuring smooth and real-time updates.</li>
-                            </ul>
-                            <p>This project highlights my ability to create interactive web applications with real-time
-                                data updates and user feedback, showcasing my skills in JavaScript for interactive
-                                functionalities and front-end development for building responsive, user-friendly
-                                interfaces.</p>
-                        </div>
+                <div class="bheight"></div>
+                <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+                    <div class="card card-body" style="width: 700px;">
+                        <ul>
+                            <li>Dynamic Text Selection: The game randomly selects a paragraph from a predefined set,
+                                ensuring a varied typing experience for each session.</li>
+                            <li>Real-Time Typing Metrics: The game tracks and updates WPM, CPM, and mistakes as
+                                users type, providing immediate feedback on their performance.</li>
+                            <li>Timer Integration: A countdown timer runs from 60 seconds, challenging users to
+                                complete typing the text within the allocated time.</li>
+                            <li>Error Tracking and Feedback: Mistyped characters are highlighted in red, and correct
+                                characters are marked in green, helping users quickly identify and learn from their
+                                mistakes.
+                            </li>
+                            <li>Responsive Design: Designed a mobile-friendly and responsive interface using HTML
+                                and CSS, ensuring users have a smooth and engaging experience across all devices.
+                            </li>
+                            <li>JavaScript Logic: Utilized JavaScript to handle the dynamic interaction between the
+                                timer, input field, and typing feedback, ensuring smooth and real-time updates.</li>
+                        </ul>
+                        <p>This project highlights my ability to create interactive web applications with real-time
+                            data updates and user feedback, showcasing my skills in JavaScript for interactive
+                            functionalities and front-end development for building responsive, user-friendly
+                            interfaces.</p>
                     </div>
                 </div>
+
             </div>
 
             <div class="left carousels">
@@ -495,30 +543,30 @@
                         Key features include:
                     </button>
                 </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample5">
-                        <div class="card card-body" style="width: 700px;">
-                            <ul>
-                                <li>Task Management: Users can add new tasks, delete completed tasks, and edit existing
-                                    tasks to keep track of their to-do list efficiently.</li>
-                                <li>Login/Logout System: Implemented a basic login page where users must enter a
-                                    constant password to gain access to the task manager, with a logout feature to
-                                    secure the app.</li>
-                                <li>Dynamic Task List: The task list is dynamically updated as users add, edit, or
-                                    delete tasks. This provides a smooth and interactive experience.</li>
-                                <li>Responsive Design: Designed the interface using HTML and CSS, ensuring a simple,
-                                    clean, and mobile-friendly layout for a smooth user experience across devices.</li>
-                                <li>JavaScript Logic: Utilized JavaScript to handle the addition, deletion, and editing
-                                    of tasks. The login/logout functionality is also controlled via JavaScript to ensure
-                                    proper session management.</li>
-                            </ul>
-                            <p>This project highlights my ability to build a functional web application with user
-                                authentication and dynamic content management. It demonstrates my skills in front-end
-                                development with HTML, CSS, and JavaScript, as well as my understanding of building
-                                interactive and user-oriented web apps.</p>
-                        </div>
+                <div class="bheight"></div>
+                <div class="collapse collapse-horizontal" id="collapseWidthExample5">
+                    <div class="card card-body" style="width: 700px;">
+                        <ul>
+                            <li>Task Management: Users can add new tasks, delete completed tasks, and edit existing
+                                tasks to keep track of their to-do list efficiently.</li>
+                            <li>Login/Logout System: Implemented a basic login page where users must enter a
+                                constant password to gain access to the task manager, with a logout feature to
+                                secure the app.</li>
+                            <li>Dynamic Task List: The task list is dynamically updated as users add, edit, or
+                                delete tasks. This provides a smooth and interactive experience.</li>
+                            <li>Responsive Design: Designed the interface using HTML and CSS, ensuring a simple,
+                                clean, and mobile-friendly layout for a smooth user experience across devices.</li>
+                            <li>JavaScript Logic: Utilized JavaScript to handle the addition, deletion, and editing
+                                of tasks. The login/logout functionality is also controlled via JavaScript to ensure
+                                proper session management.</li>
+                        </ul>
+                        <p>This project highlights my ability to build a functional web application with user
+                            authentication and dynamic content management. It demonstrates my skills in front-end
+                            development with HTML, CSS, and JavaScript, as well as my understanding of building
+                            interactive and user-oriented web apps.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
