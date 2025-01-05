@@ -159,6 +159,10 @@ hobbiesBtn.addEventListener("click", async () => {
 
 connBtn.addEventListener("click", async () => {
   homePage.classList.add("fade-out");
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+  });
   // Listen for the end of the fade-out animation to hide the page
   homePage.addEventListener(
     "animationend",
